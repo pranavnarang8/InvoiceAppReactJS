@@ -1,3 +1,6 @@
+/* .body{
+  counter-reset: Serial;
+} */
 .App {
   text-align: center;
 }
@@ -36,3 +39,314 @@
     transform: rotate(360deg);
   }
 }
+
+/* Header CSS */
+.header1{
+  width:1500px;
+  margin-left: auto;
+  margin-right:auto;
+  /* height:180px; */
+  background-color: white;
+  display: flex;
+}
+
+.grid1{
+  margin:10px 0px 10px 20px;
+}
+
+.crystalLogo, .taxinv{
+  /* height:100px */
+  width:120px;
+}
+
+.grid2{
+  margin:10px 20px 10px auto;
+  line-height: 40%;
+  font-size: 16px;
+  text-align: right;
+}
+
+/* Body CSS */
+.body1{
+  width:1500px;
+  margin-left: auto;
+  margin-right:auto;
+  /* height:500px; */
+  
+  border-top: 4px solid royalblue;
+  
+}
+
+.billHeader{
+  height: max-content;
+  display: flex;
+}
+
+.bill{
+  text-align: left;
+  margin: 5px auto 10px 20px;
+  
+}
+.bill-address{
+  display: grid;
+  grid-template-columns: 400px 400px;
+}
+.invoice{
+  text-align: right;
+  margin: 20px 10px 20px auto;
+}
+
+.form-label{
+  margin: 0px 10px 5px 20px
+}
+.inputFields{
+  
+  padding:1px 3px 1px 3px;
+  margin:0px 20px 1px 0px;
+  border-radius: 5px;
+  border: silver 0.25px solid;
+  width:300px;
+  text-align:left;
+  font-size: 16px;
+}
+/* .required:after{
+  content:" *";
+  color:"red"
+} */
+.invoiceFields{
+  padding:1px 3px 1px 3px;
+  margin:0px 20px 1px 0px;
+  border-radius: 5px;
+  border: silver 0.25px solid;
+  width:300px;
+  text-align:left;
+  font-size: 16px;
+}
+
+#number, #date, #place{
+  width:180px;
+  text-align: right;
+}
+.table{
+  margin: 0px 0px 20px 0px;
+  padding: 0px 10px 0px 10px;
+  width:100%;
+}
+
+th{
+  /* border:silver 1px solid; */
+  padding:3px;
+  background-color: rgb(25, 25, 185);
+  color: white;
+  font-weight: 500;
+  print-color-adjust: exact;
+}
+
+.printscreen{
+  padding:3px;
+  background-color: rgb(25, 25, 185);
+  color: white;
+  font-weight: 500;
+  print-color-adjust: exact;
+}
+
+.discount-field{
+  width:140px;
+}
+
+.addBtn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deleteBtn{
+  border:none;
+  background-color: crimson;
+  border-radius: 5px;
+  padding:5px;
+  color:white;
+}
+
+.addproduct{
+  margin-top:5px;
+  margin-bottom:5px;
+  padding:7px;
+  background-color: black;
+  color:white;
+  border: none;
+  border-radius: 4px;
+  margin-left:10px;
+ 
+}
+td{
+  padding:4px
+}
+.select{
+  display: flex;
+  align-items: center;
+}
+select{
+  width:70%;
+  margin-left:20px;
+  border:none;
+  
+  text-align:center;
+  margin-right:auto;
+  padding:5px;
+}
+.pcategory{
+  margin-bottom:0px;
+  margin-right: 20px;
+}
+
+
+#amount, #percent, #quantity, #checkin, #checkout{
+  text-align: center;
+  background-color: white;
+  border:silver 0.5px solid;
+  border-radius: 5px;
+}
+
+.summary{
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: royalblue solid 4px;
+  border-top: royalblue solid 4px;
+}
+
+.sumList{
+  list-style-type:none;
+  padding:0px;
+  margin-bottom:0px;
+  width:20%;
+}
+
+.sumDetails{
+  line-height: 90%;
+  padding:10px;
+  /* background-color: whitesmoke; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  text-align: left;
+}
+
+.figures{
+  margin-left: auto; 
+  margin-bottom: 0px;
+}
+
+.footer{
+  width:1500px;
+  margin-left: auto;
+  margin-right:auto;
+  display:flex;
+  /* background-color: blanchedalmond; */
+}
+
+.bankdetails{
+  display:flex;
+  justify-content: flex-start;
+  text-align: left;
+  height:100%
+}
+
+.qr{
+  height:150px;
+  margin:10px
+}
+
+
+.bnk{
+  display:flex;
+  line-height: 90%;
+}
+
+.heading{
+  padding-left:20px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+.account{
+  list-style-type:none;
+  padding-left:20px;
+  margin-bottom: 0px;
+}
+
+.details{
+  margin-left:auto;
+  padding-left:10px;
+  font-weight: 600;
+}
+
+.signature{
+  display:flex;
+  margin-left: auto;
+}
+
+.terms{
+    width:1500px;
+    margin-left: auto;
+    margin-right:auto;
+    padding:10px;
+    text-align: left;
+}
+
+/* td:first-child:before
+{
+  counter-increment: Serial;      
+  content: counter(Serial); 
+} */
+
+@media all and (max-width:1550px) and (min-width:1250px) {
+  .header1, .body1, .terms, .footer{
+    width:1200px;
+  }
+  .bill-address{
+    grid-template-columns: 300px 300px;
+  }
+  .inputFields{
+    width:200px;
+  }
+  .select{
+    font-size: 14px;
+  }
+  .option{
+    font-size: 12px;
+  }
+  
+  #checkin, #checkout, .discount-field{
+    width:120px;
+  }
+}
+
+@media all and (max-width:1250px) and (min-width:1050px){
+  .header1, .body1, .terms, .footer{
+    width:1000px;
+  }
+  .bill-address{
+    grid-template-columns: 200px 200px;
+  }
+  .inputFields{
+    width:150px;
+  }
+  .select{
+    font-size: 14px;
+  }
+  .option{
+    font-size: 12px;
+  }
+
+  #checkin, #checkout, .discount-field{
+    width:100px;
+  }
+}
+
+
+
+
+
+
